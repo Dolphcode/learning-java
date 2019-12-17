@@ -17,6 +17,7 @@ public class MusicTest1 {
 		// Catch takes an object of type Exception as a parameter
 		} catch (MidiUnavailableException ex) {
 			System.out.println("Bummer");
+			ex.printStackTrace();
 		}
 	}
 	
