@@ -1,4 +1,4 @@
-package Chapter11;
+package Chapter11.Music;
 
 // For this project we'll be using MIDI which gives the appropriate instrument instructions to make sound
 import javax.sound.midi.*;
