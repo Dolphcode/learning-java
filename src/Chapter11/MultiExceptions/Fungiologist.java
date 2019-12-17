@@ -10,13 +10,17 @@ public class Fungiologist {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int sense = (int) Math.round(Math.random());
+		int sense = (int) Math.round(Math.random() * 2);
 		mrSun.recordData();
+		// Can catch multiple exceptions! :)
 		try {
 			// We're gonna try one of the two randomly
-			if (sense == 1) {
+			if (sense == 2) {
 				System.out.println("Gonna sniff it!");
 				mrSun.sniff();
+			} else if (sense == 1) {
+				System.out.println("Gonna eat it!");
+				mrSun.eat();
 			} else {
 				System.out.println("Gonna touch it!");
 				mrSun.touch();

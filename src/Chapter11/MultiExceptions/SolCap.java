@@ -35,5 +35,21 @@ public final class SolCap extends Mushroom {
 			System.out.println("Feels nice and soft, also very smooth, somewhat warm and cozy :)");
 		}
 	}
+	/**
+	 * A fungiologist will touch with a risky chance of being paralyzed
+	 * @throws ParalysisException
+	 * @throws PoisonException
+	 */
+	// This throws multiple exceptions
+	public void eat() throws ParalysisException, PoisonException {
+		int eat = (int) (Math.random() * 100);
+		if (eat > 25 && eat < 50) {
+			throw new ParalysisException();
+		} else if (eat > 50 && eat < 75) {
+			throw new PoisonException();
+		} else {
+			System.out.println("Tastes sweet and warm, make you want to nap :)");
+		}
+	}
 
 }
